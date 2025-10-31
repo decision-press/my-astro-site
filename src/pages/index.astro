@@ -1,11 +1,72 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
+---
+// No imports, no JS — just static HTML below
 
-<Layout>
-	<Welcome />
-</Layout>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Astro Static Page</title>
+
+    <style>
+      :root {
+        --bg: #0b0b0b;
+        --fg: #f8f8f8;
+        --accent: #ffb400;
+      }
+      body {
+        margin: 0;
+        font-family: system-ui, sans-serif;
+        background: var(--bg);
+        color: var(--fg);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      header, footer {
+        text-align: center;
+        padding: 1.5rem;
+        background: #111;
+      }
+      main {
+        flex: 1;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        padding: 3rem 1rem;
+      }
+      h1 {
+        font-size: 2.8rem;
+        margin-bottom: 1rem;
+        color: var(--accent);
+      }
+      p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        max-width: 40rem;
+        margin: 0 auto;
+      }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+        border-bottom: 1px solid var(--accent);
+      }
+      a:hover {
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h2>My Astro Site</h2>
+    </header>
+
+    <main>
+      <div>
+        <h1>Hello, world.</h1>
+        <p>
+          This is a completely static Astro page — no frameworks, no JS,
+          just
+
