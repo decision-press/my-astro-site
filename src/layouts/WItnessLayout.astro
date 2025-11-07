@@ -1,0 +1,21 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import WitnessField from "../components/WitnessField.jsx";
+
+const { title, witnessTitle, witnessText } = Astro.props;
+---
+
+<BaseLayout title={title}>
+  <section class="witness-section">
+    <WitnessField client:load canvasHeight={260} particleCount={80} />
+
+    <div class="witness-inner">
+      <h2>{witnessTitle}</h2>
+      <p>{witnessText}</p>
+    </div>
+  </section>
+
+  <main>
+    <slot />
+  </main>
+</BaseLayout>

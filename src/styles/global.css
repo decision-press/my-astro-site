@@ -1,0 +1,185 @@
+/* =========================================
+   GLOBAL BASE STYLES — OUR8231 / WITNESS
+   ========================================= */
+
+/* Reset and font smoothing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #e5e7eb;
+  background-color: #02030a;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Global link rhythm */
+a {
+  color: #8fb9ff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Global content rhythm */
+section {
+  margin-block: 3rem;
+  padding-inline: 1rem;
+}
+
+/* Limit default content width */
+main,
+section,
+article {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.25;
+  color: #f8fafc;
+  margin-top: 0;
+}
+
+h1 { font-size: 2.25rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.35rem; }
+
+/* Paragraphs */
+p {
+  font-size: 1rem;
+  color: #cbd5f5;
+  margin-bottom: 1.25rem;
+}
+
+/* =========================================
+   WITNESS FIELD COMPONENT STYLES
+   ========================================= */
+
+.witness-section {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  margin: 2.5rem auto;
+  background: radial-gradient(circle at top, #0b1024, #02030a);
+  width: min(100%, 960px);
+  box-shadow: 0 0 30px rgba(0,0,0,0.25);
+}
+
+/* Full-width variant for hero use */
+.witness-section.fullwidth {
+  width: 100%;
+  border-radius: 0;
+}
+
+/* The actual canvas */
+.witness-field {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+}
+
+/* Text overlay container */
+.witness-inner {
+  position: relative;
+  padding: 2.5rem 2rem;
+  z-index: 1;
+  color: #e5e7eb;
+  max-width: 42rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Inner heading */
+.witness-inner h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+  color: #f3f4f6;
+}
+
+/* Inner paragraph */
+.witness-inner p {
+  line-height: 1.7;
+  font-size: 1rem;
+  color: #cbd5f5;
+}
+
+/* =========================================
+   OPTIONAL UTILITIES
+   ========================================= */
+
+/* Add vertical breathing room around blocks */
+.spacing-lg {
+  margin-block: 4rem;
+}
+
+/* Subtle divider line */
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #3b3f59, transparent);
+  margin-block: 3rem;
+}
+
+/* =========================================
+   MOBILE TWEAKS — PHONE MODE
+   ========================================= */
+
+@media (max-width: 640px) {
+  html, body {
+    font-size: 15px; /* slightly smaller base */
+  }
+
+  section {
+    margin-block: 2rem;
+    padding-inline: 1rem;
+  }
+
+  main,
+  section,
+  article {
+    max-width: 100%;   /* let it use full phone width */
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.15rem;
+  }
+
+  .witness-section {
+    border-radius: 1rem;
+    margin: 1.5rem 0.75rem;  /* more natural phone margins */
+    width: auto;             /* follow phone width */
+  }
+
+  .witness-inner {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .witness-inner h2 {
+    font-size: 1.5rem;
+  }
+
+  .witness-inner p {
+    font-size: 0.95rem;
+  }
+}

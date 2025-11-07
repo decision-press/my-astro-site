@@ -1,72 +1,27 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Counter from "../components/Counter.jsx";
+import WitnessField from "../components/WitnessField.jsx";
 ---
----
-// No imports, no JS — just static HTML below
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My Astro Static Page</title>
+<BaseLayout
+  title="The God Decision"
+  subtitle="Making reasoned risk visible — one island at a time."
+>
+  <p>
+    This is a small lab page: mostly static content rendered by Astro, with a
+    single interactive island to prove the system is alive.
+  </p>
 
-    <style>
-      :root {
-        --bg: #0b0b0b;
-        --fg: #f8f8f8;
-        --accent: #ffb400;
-      }
-      body {
-        margin: 0;
-        font-family: system-ui, sans-serif;
-        background: var(--bg);
-        color: var(--fg);
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-      }
-      header, footer {
-        text-align: center;
-        padding: 1.5rem;
-        background: #111;
-      }
-      main {
-        flex: 1;
-        display: grid;
-        place-items: center;
-        text-align: center;
-        padding: 3rem 1rem;
-      }
-      h1 {
-        font-size: 2.8rem;
-        margin-bottom: 1rem;
-        color: var(--accent);
-      }
-      p {
-        font-size: 1.2rem;
-        line-height: 1.6;
-        max-width: 40rem;
-        margin: 0 auto;
-      }
-      a {
-        color: var(--accent);
-        text-decoration: none;
-        border-bottom: 1px solid var(--accent);
-      }
-      a:hover {
-        opacity: 0.8;
-      }
-    </style>
-  </head>
+  <p>
+    Below is a tiny client-side counter. Think of it as a stand-in for all the
+    places where human choice and machine precision touch in this project.
+  </p>
 
-  <body>
-    <header>
-      <h2>My Astro Site</h2>
-    </header>
 
-    <main>
-      <div>
-        <h1>Hello, world.</h1>
-        <p>
-          This is a completely static Astro page — no frameworks, no JS,
-          just
+  <Counter client:load />
+
+   
+  
+</BaseLayout>
 

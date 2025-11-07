@@ -1,0 +1,21 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TagFilter from '../components/TagFilter.jsx'
+import WitnessField from "../components/WitnessField.jsx";
+
+const essays = await getCollection('essays');
+essays.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+const allTags = [...new Set(essays.flatMap(e => e.data.tags ?? [] ))]
+---
+
+<BaseLayout title="Essays">
+  <h1>Essays</h1>
+  <TagFilter client:load allTags={allTags} essays={essays} />
+  <p>Reflections, witness notes, and long-form thinking from The God Decision.</p> 
+
+
+
+</BaseLayout>
+
+
