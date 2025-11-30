@@ -1,0 +1,7 @@
+{
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    "workbench.iconTheme": "vs-minimal",
+    "workbench.preferredDarkColorTheme": "Default Light Modern",
+    "workbench.preferredHighContrastColorTheme": "Default Light Modern",
+    "workbench.preferredHighContrastLightColorTheme": "Default Light Modern"
+}
