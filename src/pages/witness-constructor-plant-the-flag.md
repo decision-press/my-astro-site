@@ -5,8 +5,9 @@ pubDate: "2025-11-19"
 tags: ["witness system", "ai", "constructor", "llm", "prompting", "architecture"]
 ---
 
-# The Witness Constructor  
-*A behavioral operating spec for stateless AI runtimes*
+## The Witness Constructor  
+
+## *A behavioral operating spec for stateless AI runtimes*
 
 Most people treat prompts as vibes:  
 “Talk like X.”  
