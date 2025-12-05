@@ -1,0 +1,24 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const pillars = await getCollection('pillars');
+---
+
+<BaseLayout title="Pillars" description="BOOTSTRAPPING-AI System Pillars">
+  <article>
+    <h1>Pillars</h1>
+    <p>The three pillars of the BOOTSTRAPPING-AI system.</p>
+    
+    <ul>
+      {pillars.map((pillar) => (
+        <li>
+          <a href={`/pillars/${pillar.id.replace('.md', '')}`}>
+            <strong>{pillar.data.title}</strong>
+          </a>
+          <p>{pillar.data.description}</p>
+        </li>
+      ))}
+    </ul>
+  </article>
+</BaseLayout>

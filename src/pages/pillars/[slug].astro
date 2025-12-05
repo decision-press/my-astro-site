@@ -1,21 +1,18 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import EssayLayout from '../../layouts/EssayLayout.astro';
 
 export async function getStaticPaths() {
   const pillars = await getCollection('pillars');
-
   return pillars.map((pillar) => ({
-    params: { slug: pillar.slug },
+    params: { slug: pillar.id.replace('.md', '') },
     props: { pillar },
   }));
 }
 
 const { pillar } = Astro.props;
 const { title, description, date, author } = pillar.data;
-
-// Turn the markdown content into a renderable component
-const { Content } = await pillar.render();
+const { Content } = await render(pillar);
 ---
 
 <EssayLayout {title} {description} {date} {author}>
