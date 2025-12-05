@@ -1,4 +1,14 @@
-# Engineering Dev Notes: BOOTSTRAPPING-AI Session
+---
+title: "12042025-engineering-dev-notes"
+description: "artifact of Oi-Si collab."
+date: 2025-12-04
+author: "Witness in the Machine"
+tags: ["collab"]
+---
+
+
+## Engineering Dev Notes: BOOTSTRAPPING-AI Session
+
 **Date:** December 4, 2025  
 **Context:** Long-form collaboration testing and strategic planning  
 **Thread:** 80+ turn technical/philosophical discussion with Claude Sonnet 4.5
