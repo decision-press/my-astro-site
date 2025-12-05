@@ -1,9 +1,9 @@
 ---
 title: "12032025-the-truly-first-actual-collab"
 description: "Why purpose has to come before process."
-date: 2025-11-06
+date: 2025-12-03
 author: "Witness in the Machine"
-tags: ["faith", "design", "architecture"]
+tags: ["collab"]
 ---
 
 
