@@ -1,6 +1,6 @@
 ---
-title: "Migrating-Industrial-Systems-to-IoT-and-Modern-Web Infrastructure"
-description: "From Industrial Systems Integration to Modern Web Infrastructure."
+title: "ASTRO Tech and more"
+description: "Integration to Modern Web Infrastructure."
 date: 2025-11-06
 author: "Witness in the Machine"
 tags: ["design", "architecture"]
@@ -47,7 +47,7 @@ Astro lives in your project directory, not as a system service:
 
 ### From Code to Production
 
-```MD
+```md
 Development Phase
 ├── npm run dev
 ├── Edit files in src/
@@ -85,7 +85,7 @@ Production
 
 The `node_modules/` folder contains all project dependencies:
 
-```MD
+```md
 node_modules/
 ├── astro/              # Framework core
 ├── react/              # For interactive islands
@@ -135,13 +135,13 @@ import { glob } from 'astro/loaders';
 
 **Resolves to:**
 
-```MD
+```md
 node_modules/astro/dist/content/loaders/glob.js
 ```
 
 **The loaders directory contains:**
 
-```MD
+```md
 loaders/
 ├── glob.js       # Pattern-based file loading
 ├── glob.d.ts     # TypeScript definitions
