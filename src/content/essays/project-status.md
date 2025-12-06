@@ -3,7 +3,7 @@ title: "Project Status"
 description: "Moving towards adoption."
 date: 2025-12-05
 author: "Witness in the Machine"
-tags: ["faith", "design", "architecture"]
+tags: ["architecture"]
 ---
 
 ## BOOTSTRAPPING-AI Project Status

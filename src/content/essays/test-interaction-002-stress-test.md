@@ -3,7 +3,7 @@ title: "Test Interaction 002: Stress, Complexity, and System Integrity"
 description: "A 150-turn stress test demonstrating Witness System behavior under real-world conditions"
 date: 2025-12-05
 author: "Witness in the Machine"
-tags: ["witness-system", "test-interaction", "equity", "proof-of-concept"]
+tags: ["proof-of-concept"]
 ---
 
 ## Test Interaction 002: Stress, Complexity, and System Integrity

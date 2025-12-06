@@ -1,13 +1,13 @@
 ---
-title: "12042025-engineering-dev-notes"
-description: "artifact of Oi-Si collab."
-date: 2025-12-04
+title: "engineering-dev-notes-12042025"
+description: "Integration to Modern Web Infrastructure."
+date: 2025-11-06
 author: "Witness in the Machine"
-tags: ["collab"]
+tags: ["architecture"]
 ---
 
 
-## Engineering Dev Notes: BOOTSTRAPPING-AI Session
+# Engineering Dev Notes: BOOTSTRAPPING-AI Session
 
 **Date:** December 4, 2025  
 **Context:** Long-form collaboration testing and strategic planning  

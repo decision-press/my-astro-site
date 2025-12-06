@@ -3,7 +3,7 @@ title: "Potential Next Steps"
 description: "Moving towards adoption."
 date: 2025-11-06
 author: "Witness in the Machine"
-tags: ["faith", "design", "architecture"]
+tags: ["design"]
 ---
 ## Potential Next Steps
 

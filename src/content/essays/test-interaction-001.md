@@ -3,7 +3,7 @@ title: "Stress Test: Lawn Business"
 description: "Moving towards adoption."
 date: 2025-12-05
 author: "Witness in the Machine"
-tags: ["faith", "design", "architecture"]
+tags: ["design"]
 ---
 
 ## Test Interaction 001: Lawn Business Scenario
