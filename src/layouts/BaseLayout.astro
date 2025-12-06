@@ -144,9 +144,7 @@ import WitnessField from "../components/WitnessField.jsx";
           {subtitle && <p class="subtitle">{subtitle}</p>}
         </div>
         <Nav />
-      </header>
-
-      
+      </header>     
     <section class="witness-section">
     <WitnessField client:load canvasHeight={260} particleCount={80} />
 
@@ -161,7 +159,6 @@ import WitnessField from "../components/WitnessField.jsx";
        <main>
       <slot />
       </main>
-
       <footer>
         <span>Reasoned risk in public view.</span>
         <span>© {new Date().getFullYear()} Building Websites Plus</span>
