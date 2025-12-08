@@ -1,0 +1,35 @@
+---
+import Nav from "../components/Nav.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <style>
+     
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <header>
+        <div class="brand">Counter Culture Cat · Witness Lab</div>
+        <div class="title-row">
+          
+        </div>
+        <Nav />
+      </header>     
+   
+   
+       <main>
+      <slot />
+      </main>
+      <footer>
+
+        <span>Reasoned risk in public view.</span>
+        <span>© {new Date().getFullYear()} Building Websites Plus</span>
+      </footer>
+    </div>
+
+  </body>
+</html>
