@@ -1,6 +1,6 @@
 ---
 import { getCollection, render } from 'astro:content';
-import EssayLayout from '../../layouts/EssayLayout.astro';
+import PillarLayout from '../../layouts/PillarLayout.astro';
 
 export async function getStaticPaths() {
   const pillars = await getCollection('pillars');
@@ -15,6 +15,6 @@ const { title, description, date, author } = pillar.data;
 const { Content } = await render(pillar);
 ---
 
-<EssayLayout {title} {description} {date} {author}>
+<PillarLayout {title} {description} {date} {author}>
   <Content />
-</EssayLayout>
+</PillarLayout>
