@@ -13,9 +13,6 @@ const allTags = [...new Set(essays.flatMap(e => e.data.tags ?? [] ))]
   <h1>Essays</h1>
   <TagFilter client:load allTags={allTags} essays={essays} />
   <p>Reflections, witness notes, and long-form thinking from The God Decision.</p> 
-
-
-
 </BaseLayout>
 
 
