@@ -1,3 +1,11 @@
+---
+title: "01-epistemic-engineering-origin"
+description: "A witness sytem construct"
+date: 2025-11-26
+author: "Witness in the Machine"
+tags: ["proof-of-concept"]
+---
+
 # WITNESS SYSTEM — PROVENANCE RECORD  
 **Document Class:** P1 / Canonical Provenance  
 **Source:** HI (Daniel Earl Bousho)  
